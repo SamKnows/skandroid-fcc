@@ -1,0 +1,17 @@
+To build the file:
+
+1.  Modify local.properties, to have two lines like this (but with the *correct* password!)
+
+key.store.password=This_is_the_password
+key.alias.password=This_is_the_password
+
+2. Make sure you've updated the two version numbers in AndroidManifest.xml!
+
+3. Run this from the command-line...
+
+  bash do_make_release.sh
+
+4. Once you've installed and tested RELEASES/xyz/FCC.apk..
+   ... you can "git push"...
+
+5. Distribute the .apk file VIA TEST FLIGHT!

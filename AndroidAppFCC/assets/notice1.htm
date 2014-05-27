@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+<TITLE></TITLE>
+<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.4.1  (Win32)">
+<META NAME="CREATED" CONTENT="0;0">
+<META NAME="CHANGED" CONTENT="20130207;16122165">
+<STYLE TYPE="text/css">
+<!--
+@font-face {font-family: 'typewriter';src: url('file:///android_asset/typewriter.ttf');}
+BODY { font-family:arial }
+-->
+</STYLE>
+
+<script language="javascript" type="text/javascript">
+
+function getElementsByClassName(node,classname) {
+  if (node.getElementsByClassName) { // use native implementation if available
+    return node.getElementsByClassName(classname);
+  } else {
+    return (function getElementsByClass(searchClass,node) {
+        if ( node == null )
+          node = document;
+        var classElements = [],
+            els = node.getElementsByTagName("*"),
+            elsLen = els.length,
+            pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)"), i, j;
+
+        for (i = 0, j = 0; i < elsLen; i++) {
+          if ( pattern.test(els[i].className) ) {
+              classElements[j] = els[i];
+              j++;
+          }
+        }
+        return classElements;
+    })(classname, node);
+  }
+}
+
+</script>
+
+</HEAD>
+<BODY LANG="en-GB" DIR="LTR">
+<DIV ID="page_1" DIR="LTR">
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>What Information We Collect</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=3>The information we collect about your broadband performance is anonymous. </FONT></FONT><FONT SIZE=3><a href="" onclick="Android.showToast('We do not label the data we collect from you with anything that would directly identify your handset.  Because your data is part of an anonymous pool that includes information collected from all participants, the risk of someone being able to successfully identify an individual from the data is minimal.');return false;">
+No unique or persistent identifier</a></FONT></FONT><FONT SIZE=3> is associated with any data we collect from you.</FONT></FONT></P>
+
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=3>We collect five kinds of information to measure the performance of your mobile</FONT></FONT><FONT SIZE=3>
+</FONT></FONT><FONT SIZE=3>broadband service</FONT></FONT><FONT SIZE=3>.</FONT></FONT></P>
+<UL><LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><a href="" onclick="Android.showToast('When we measure your mobile broadband performance, we identify the location and unique ID of the cell tower that is providing that service, and the GPS location of your device when the measurements were made.');return false;">Location</a></FONT></FONT></P>
+</UL>
+<UL><LI><P STYLE="margin-bottom: 0cm;"><FONT SIZE=3><a href="" onclick="Android.showToast('We record the times when we perform measurements of your mobile broadband performance.  Some measurements function by recording a start and end time.');return false;">Time of data collection</a></FONT></FONT></P>
+</UL>
+<UL><LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><a href="" onclick="Android.showToast('When the measurement Application starts, we record the manufacturer and model of phone you are using, and the version of the operating system installed on your phone.');return false;">Handset type and operating system version</a></FONT></FONT></P>
+<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><a href="" onclick="Android.showToast('We collect information about your cellular phone performance, such as your service provider, the strength of the radio signal, and what type of connection (3G or 4G) service you have.');return false;">Cellular performance and characteristics</a></FONT></FONT></P>
+</UL>
+<UL><LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><FONT SIZE=3><a href="" onclick="Android.showToast('The Application tests your mobile broadband upload and download rate, round trip latency, and packet loss measured between your handset and our servers managed by the FCC, the FCC contractor, and other project partners.');return false;">Broadband performance</a></FONT></FONT></P>
+</UL>
+<P STYLE="margin-bottom: 0cm;"><A NAME="_GoBack"></A>
+<FONT SIZE=3>This data is stored on your phone in the Application's sandbox (a protected private area for the Application) for you to review, and periodically uploaded to our servers. Older data is also periodically deleted from your phone. You can find more detail in the FCC&rsquo;s <a href="http://www.fcc.gov/measuring-broadband-america/mobile/technical-summary.html">technical summary</a> of this program.</FONT></FONT></P>
+</DIV>
+</BODY>
+</HTML>

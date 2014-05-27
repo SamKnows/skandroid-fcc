@@ -1,0 +1,35 @@
+1) check constants values for DUMMYDBDATA, DEBUG, USE_LOCAL_CONFIG, LOG_TO_FILE
+2) version in android manifest file
+3) values in properties file
+4) web services for getting new configuration and for submitting the results
+5) review of the targets
+6) all activities
+7) archive release apk
+8) output file
+
+Use Cases & Tests (UAT)
+
+All menu options open
+	Settings
+	About
+	Terms of use
+	System Info
+	Activation
+	Map
+	Logout
+Initiate manual test
+	All 3 tests run when Run now is clicked
+	Only selected test runs from dropdown option on Run now button
+	Test fails gracefully if device is in fight mode or has no connectivity
+	Test works correctly using GPS or Network Location (can be changed in Settings screen)
+Scheduled test runs & updates data
+	Next scheduled test can be seen in System Info screen
+	- Ensure this runs at correct time
+Panels open on Average results screen and data can be navigated using grid page buttons
+	Data appears correctly with the correct number of pages
+Charts change when time period is selected
+Each setting in settings menu can be changed and persists after closing and opening
+Archive data can be viewed by swiping
+	Back button returns to Average Results top screen
+Date formats appear as set by Date & Time Settings preferences from the Android OS
+	(ie American date styles appear in format MM/DD/YYYY)

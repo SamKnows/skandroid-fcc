@@ -1,0 +1,5 @@
+<resources>
+<style name="ApplicationStyle" parent="android:Theme.Holo.Light">
+  <item name="android:buttonStyle">@style/Button</item>
+</style>
+</resources>

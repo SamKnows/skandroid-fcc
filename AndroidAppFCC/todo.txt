@@ -1,0 +1,9 @@
+TODO
+====
+
+General
+- Merge fully with the EAQ code; move as much code as possible into libcore.
+
+Settings screen
+- Allow keyboard input on slider options
+	

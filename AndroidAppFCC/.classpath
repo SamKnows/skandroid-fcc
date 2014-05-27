@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/google_play_services_lib"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libcore"/>
+	<classpathentry kind="lib" path="/google_play_services_lib/bin/google_play_services_lib.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="/libcore/libs/achartengine-1.1.0.jar"/>
+	<classpathentry kind="lib" path="/google_play_services_lib/libs/google-play-services.jar"/>
+	<classpathentry kind="lib" path="/FacebookSDK/libs/android-support-v4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacebookSDK"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

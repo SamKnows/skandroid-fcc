@@ -1,0 +1,14 @@
+DCS_Init_url=http://dcs-mobile-fcc.samknows.com/mobile/dcs
+Reporting_path=https://reporting.samknows.com/mobile.php/
+fail_request_reschedule_time_in_millis=3600000
+killed_service_restart_time_in_millis=29600000
+test_start_window_in_millis_rtc=1200000
+test_start_window_in_millis_rtc_wakeup=300000
+protocol_scheme=http
+submit_path=mobile/submitjson
+download_config_path=mobile/getconfig
+enterprise_id=FCC_Public
+data_cap_welcome=false
+user_self_identifier=false
+anonymous=true
+collect_traffic_data=true

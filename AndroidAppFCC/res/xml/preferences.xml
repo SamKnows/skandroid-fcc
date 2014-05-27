@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:key="first_category"
+		android:title="@string/preferences_title">
+		<CheckBoxPreference 
+			android:key="enable_testing" android:summary="@string/enable_testing_summary"
+			android:title="@string/enable_testing_title" />
+
+		<com.samknows.measurement.activity.components.DataUsedPreference
+			android:title="@string/data_used_preference_title" 
+			android:summary="@string/data_used_preference_summary" />
+
+		<CheckBoxPreference android:defaultValue="true"
+			android:key="data_cap_enabled" android:summary="@string/data_cap_enabled_summary"
+			android:title="@string/data_cap_enabled_title" />
+		
+		<EditTextPreference android:title="@string/data_cap_title"
+			android:key="data_cap_pref" android:dialogTitle="@string/data_cap_title"
+			android:dialogMessage="@string/data_cap_summary" android:summary="@string/data_cap_summary"
+			android:singleLine="true" android:numeric="integer"
+			 />
+			<!-- android:defaultValue="200" -->
+		<com.samknows.measurement.activity.components.SeekBarPreference
+			android:key="data_cap_reset_day" android:title="@string/data_cap_day_title"
+			android:summary="@string/data_cap_day_summary" android:dialogMessage=""
+			android:defaultValue="1" android:text="@string/day_of_month" android:max="30"
+			key="data_cap_reset_day" android:numeric="integer" />
+
+		<CheckBoxPreference android:defaultValue="true"
+			android:key="enable_wakeup" android:summary="@string/enable_wakeup_summary"
+			android:title="@string/enable_wakeup_title" />
+
+		<ListPreference android:entries="@array/locationServiceTypes"
+			android:entryValues="@array/locationServiceTypes" android:key="location_type"
+			android:summary="@string/location_type_summary" android:title="@string/location_type_title" />
+		<EditTextPreference android:title="@string/user_tag"
+			android:key="user_self_id" android:dialogTitle="@string/user_tag"
+			android:dialogMessage="@string/user_tag_message" android:summary="@string/user_tag_message"
+			android:singleLine="true" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

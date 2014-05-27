@@ -1,0 +1,3 @@
+[submodule "skandroid-core"]
+	path = skandroid-core
+	url = git@github.com:SamKnows/skandroid-core.git
