@@ -1,3 +1,4 @@
 # We must NEVER check-in a local.properties file!!
 local.properties
 AndroidAppFCCTest/bin
+operators.json

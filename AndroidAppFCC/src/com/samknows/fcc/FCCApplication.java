@@ -48,7 +48,7 @@ public class FCCApplication extends SKApplication {
 	}
 	
 	public boolean isThrottleQuerySupported() {
-		return false;
+		return true;
 	}
 	
 	
