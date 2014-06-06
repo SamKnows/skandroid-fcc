@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="app_name">FCC Speed Test</string>
 <string name="about">About FCC Speed Test</string>
 <string name="socialmedia_footer_short">" with FCC Speed Test by @SamKnows http://bit.ly/Oaz6mR"</string>
 <string name="socialmedia_footer_long">" using the free FCC Speed Test App, by SamKnows. Get the app yourself here http://bit.ly/Oaz6mR"</string>
