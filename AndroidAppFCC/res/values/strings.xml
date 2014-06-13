@@ -6,16 +6,16 @@
 <string name="socialmedia_footer_long">" using the free FCC Speed Test App, by SamKnows. Get the app yourself here http://bit.ly/Oaz6mR"</string>
 <string name="socialmedia_header_short_carrier">Testing #mobilebroadband speed on @</string>
 <string name="socialmedia_header_short_nocarrier">Testing #mobilebroadband speed</string>
-<string name="socialmedia_header_long_carrier">Testing actual #mobilebroadband speed on @</string>
-<string name="socialmedia_header_long_nocarrier">Testing actual #mobilebroadband speed</string>
+<string name="socialmedia_header_long_carrier">Now testing my actual #mobilebroadband speed on @</string>
+<string name="socialmedia_header_long_nocarrier">Now testing my actual #mobilebroadband speed</string>
 <string name="socialmedia_header_short_carrier_average">Testing average #mobilebroadband speed on @</string>
 <string name="socialmedia_header_short_nocarrier_average">Testing average #mobilebroadband speed</string>
-<string name="socialmedia_header_long_carrier_average">Testing average #mobilebroadband speed on @</string>
-<string name="socialmedia_header_long_nocarrier_average">Testing average #mobilebroadband speed</string>
-<string name="SocialMedia_IfUsingImage_ChangeFromThis1">Testing average</string>
-<string name="SocialMedia_IfUsingImage_ChangeToThis1">Testing</string>
-<string name="SocialMedia_IfUsingImage_ChangeFromThis2">Testing actual</string>
-<string name="SocialMedia_IfUsingImage_ChangeToThis2">Testing</string>
-<string name="SocialMedia_IfUsingImage_ChangeRegex4From">"Up:.*, "</string>
-<string name="SocialMedia_IfUsingImage_ChangeRegex4To"></string>
+<string name="socialmedia_header_long_carrier_average">Now testing my average #mobilebroadband speed on @</string>
+<string name="socialmedia_header_long_nocarrier_average">Now testing my average #mobilebroadband speed</string>
+<string name="SocialMedia_TwitterIfUsingImage_ChangeFromThis1">Testing average</string>
+<string name="SocialMedia_TwitterIfUsingImage_ChangeToThis1">Testing</string>
+<string name="SocialMedia_TwitterIfUsingImage_ChangeFromThis2">Testing actual</string>
+<string name="SocialMedia_TwitterIfUsingImage_ChangeToThis2">Testing</string>
+<string name="SocialMedia_TwitterIfUsingImage_ChangeRegex4From">", Up:.* with"</string>
+<string name="SocialMedia_TwitterIfUsingImage_ChangeRegex4To">" with"</string>
 </resources>
