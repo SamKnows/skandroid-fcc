@@ -2,6 +2,8 @@
 <resources>
 <string name="app_name">FCC Speed Test</string>
 <string name="about">About FCC Speed Test</string>
+<string name="preferences_title">FCC Settings</string>
+<string name="sk2_main_results_activity_title">FCC</string>
 <string name="socialmedia_footer_short">" with FCC Speed Test by @SamKnows http://bit.ly/Oaz6mR"</string>
 <string name="socialmedia_footer_long">" using the free FCC Speed Test App, by SamKnows. Get the app yourself here http://bit.ly/Oaz6mR"</string>
 <string name="socialmedia_header_short_carrier">Testing #mobilebroadband speed on @</string>
