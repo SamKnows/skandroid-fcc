@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.samknows.fcc"
-    android:versionCode="214"
-	android:versionName="1.114">
+    android:versionCode="215"
+	android:versionName="1.115">
 	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
 
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
