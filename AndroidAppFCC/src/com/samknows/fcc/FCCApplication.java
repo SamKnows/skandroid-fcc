@@ -1,6 +1,5 @@
 package com.samknows.fcc;
 
-import com.samknows.libcore.R;
 import com.samknows.measurement.SKApplication;
 import com.samknows.ska.activity.SKAMainResultsActivity;
 
@@ -38,6 +37,12 @@ public class FCCApplication extends SKApplication {
 	public boolean isExportMenuItemSupported() {
 		return true;
 	}
+
+	@Override
+	public String getAppName() {
+		return getApplicationContext().getString(R.string.app_name);
+	}
+	
 	
 	public boolean isSocialMediaExportSupported() {
 		return true;
