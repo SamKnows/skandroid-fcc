@@ -10,6 +10,16 @@ public class FCCApplication extends SKApplication {
 
 		setNetworkTypeResults(eNetworkTypeResults.eNetworkTypeResults_Mobile);
 	}
+	
+	@Override
+	public String getDCSInitUrl() {
+		return "http://dcs-mobile-fcc.samknows.com/mobile/dcs";
+	}
+
+	@Override
+	public String getEnterpriseId() {
+		return "FCC_Public";
+	}
 
 	// Get the class of the main activity!
 	public Class getTheMainActivityClass() {
