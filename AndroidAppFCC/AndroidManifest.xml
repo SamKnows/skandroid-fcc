@@ -41,15 +41,11 @@
 
     <activity android:name="net.hockeyapp.android.UpdateActivity" />
 
-		<activity android:name="com.samknows.ska.activity.SKASystemInfoActivity"
-			android:label="@string/activity_info_name"
+		<activity android:name="com.samknows.ska.activity.SKASettingsActivity"
+			android:label="@string/activity_settings_name"
 			android:configChanges="orientation|keyboardHidden|screenSize">
 		</activity>
 
-		<activity android:name="com.samknows.measurement.activity.SamKnowsLogin"
-			android:label="@string/activity_info_name"
-			android:configChanges="orientation|keyboardHidden|screenSize">
-		</activity>
 		
 		<activity android:name="com.samknows.measurement.activity.TestResultsActivity"
 			android:label="@string/activity_test_results_name"
@@ -126,7 +122,7 @@
 		</activity>
 		
 		<activity android:name="com.samknows.ska.activity.SKAPreferenceActivity"
-			android:label="@string/activity_pref_name"
+			android:label="@string/Storyboard_Settings_Configuration"
 			android:screenOrientation="portrait">
 			<!--  the preferences theme looks wrong in the top area for Android 2.3.3 - so rely on the preferences style supplied by the system... -->
 			<!--   android:theme="@style/PreferencesTheme"> -->
