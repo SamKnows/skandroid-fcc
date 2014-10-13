@@ -31,13 +31,6 @@
 			android:key="enable_wakeup" android:summary="@string/enable_wakeup_summary"
 			android:title="@string/enable_wakeup_title" />
 
-		<ListPreference android:entries="@array/locationServiceTypes"
-			android:entryValues="@array/locationServiceTypes" android:key="location_type"
-			android:summary="@string/location_type_summary" android:title="@string/location_type_title" />
-		<EditTextPreference android:title="@string/user_tag"
-			android:key="user_self_id" android:dialogTitle="@string/user_tag"
-			android:dialogMessage="@string/user_tag_message" android:summary="@string/user_tag_message"
-			android:singleLine="true" />
 	</PreferenceCategory>
 
 </PreferenceScreen>
