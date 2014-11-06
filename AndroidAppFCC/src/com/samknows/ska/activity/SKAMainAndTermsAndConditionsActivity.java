@@ -128,15 +128,10 @@ public class SKAMainAndTermsAndConditionsActivity extends BaseLogoutActivity {
 		}
 		if (agreement != null && agreement.equals(tandcAgreementVersion)) {
 			
-			// Go straight to the main screen!
+			// ALWAYS now go straight to the main screen - activation is handled from there.
+			LoginHelper.openMainScreenWithNoTransitionAnimation(ctx, SKAMainResultsActivity.class);
 			
 			this.setTheme(android.R.style.Theme_NoDisplay);
-			if (appSettings.isServiceActivated()) {
-				LoginHelper.openMainScreenWithNoTransitionAnimation(ctx, SKAMainResultsActivity.class);
-			} else {
-				MainService.poke(ctx);
-				startActivity(new Intent(ctx, SKAActivationActivity.class));
-			}
 		} else {
 			// The Activity starts invisible (see the AndroidManifest.xml) - we need
 			// to make the Activity visible at this point, so that we can show the T&C!
@@ -262,14 +257,9 @@ public class SKAMainAndTermsAndConditionsActivity extends BaseLogoutActivity {
 			if (page_number > total_pages) {
 				e.putString("agreement", tandcAgreementVersion);
 				e.commit();
-				SK2AppSettings a = SK2AppSettings.getSK2AppSettingsInstance();
 				
-				Intent  intent = new Intent(ctx, SKAActivationActivity.class);
-				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-					intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK );
-				}
-				ctx.startActivity(intent);
-				ctx.finish();
+    			// ALWAYS now go straight to the main screen - activation is handled from there.
+	    		LoginHelper.openMainScreenWithNoTransitionAnimation(ctx, SKAMainResultsActivity.class);
 			}
 			
 			if ( ((page_number < total_pages) && (PAddThisAmount > 0)) ||
