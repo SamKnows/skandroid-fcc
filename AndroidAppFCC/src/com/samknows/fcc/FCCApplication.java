@@ -1,5 +1,8 @@
 package com.samknows.fcc;
 
+import java.io.IOException;
+
+import com.samknows.libcore.SKLogger;
 import com.samknows.measurement.SKApplication;
 import com.samknows.ska.activity.SKAMainResultsActivity;
 
@@ -82,4 +85,17 @@ public class FCCApplication extends SKApplication {
 	public String getExportFileProviderAuthority() {
 		return "com.samknows.fcc.ExportFileProvider.provider";
 	}
+
+  
+  @Override
+  public java.io.InputStream getScheduleXml() {
+    // Must be overridden!
+    java.io.InputStream inputStream = null;
+    try {
+      inputStream = getAssets().open("Schedule_FCC.xml");
+    } catch (IOException e) {
+      SKLogger.sAssert(getClass(),  false);
+    }
+    return inputStream;
+  }
 }

@@ -1,0 +1,119 @@
+<config>
+  <global>
+    <schedule-version value="1.0"/>
+    <submit-dcs host="dcs.samknows.com"/>
+    <tests-alarm-type type="WAKEUP"/>
+    <location-service type="gps"/>
+    <onfail-test-action type="retry" delay="60s"/>
+    <init>
+      <test type="closestTarget"/>
+    </init>
+    <hosts>
+      <host dnsName="samknows1.dal1.level3.net" displayName="Dallas, USA" />
+      <host dnsName="samknows2.nyc2.level3.net" displayName="New York, USA" />
+      <host dnsName="samknows1.nyc2.level3.net" displayName="New York, USA" />
+      <host dnsName="samknows1.sjo1.level3.net" displayName="San Jose, USA" />
+      <host dnsName="samknows1.wdc4.level3.net" displayName="Washington D.C., USA" />
+      <host dnsName="samknows1.chi2.level3.net" displayName="Chicago, USA" />
+      <host dnsName="samknows1.lax1.level3.net" displayName="Los Angeles, USA" />
+    </hosts>
+    <!-- data cap in megabytes -->
+    <data-cap-default value="100"/>
+  </global>
+  <!--
+   time describes time window when location collection will still be going - before test group starts end after test group ends
+   -->
+  <!--
+   listenerDelay describes time delay between two location updates, however it is a hint for android rather than strict requirenment
+   -->
+  <data-collector type="Environment"/>
+  <data-collector type="Location" time="10s" listenerDelay="1m" enabled="true" lastKnown="false"/>
+  <conditions>
+    <condition-group id="1">
+      <!--
+       <condition type="NetworkType" value="mobile" /> mobile or wifi
+       -->
+      <condition type="NetActivity" maxByteIn="10000" maxByteOut="5000" time="20s"/>
+      <condition type="CpuActivity" maxAvg="25" time="20s"/>
+    </condition-group>
+    <condition-group id="2">
+      <!--
+       <condition type="NetworkType" value="mobile" /> mobile or wifi
+       -->
+      <condition type="ParamExpired" paramName="closest" expireTime="30d"/>
+    </condition-group>
+  </conditions>
+  <tests>
+    <test type="closestTarget" test-id="1" condition-group-id="2" displayName="Closest Target">
+      <params>
+        <param name="target" value="samknows1.dal1.level3.net" />
+        <param name="target" value="samknows2.nyc2.level3.net" />
+        <param name="target" value="samknows1.nyc2.level3.net" />
+        <param name="target" value="samknows1.sjo1.level3.net" />
+        <param name="target" value="samknows1.wdc4.level3.net" />
+        <param name="target" value="samknows1.chi2.level3.net" />
+        <param name="target" value="samknows1.lax1.level3.net" />
+      </params>
+      <ouput>
+        <field name="closest" position="3"/>
+      </ouput>
+    </test>
+    <test type="downstreamthroughput" test-id="2" condition-group-id="1" displayName="Download">
+      <params>
+        <param name="target" value="$closest"/>
+        <param name="port" value="8080"/>
+        <param name="file" value="100MB.bin"/>
+        <param name="warmupmaxtime" value="5000000"/>
+        <param name="warmupmaxbytes" value="2621440"/>
+        <param name="transfermaxtime" value="15000000"/>
+        <param name="transfermaxbytes" value="20971520" />
+        <param name="buffersize" value="1048576"/>
+        <param name="numberofthreads" value="3"/>
+      </params>
+    </test>
+    <test type="upstreamthroughput"  test-id="3" condition-group-id="1" displayName="Upload">
+      <params>
+        <param name="target" value="$closest"/>
+        <param name="port" value="8080"/>
+        <param name="file" value="100MB.bin"/>
+        <param name="warmupmaxtime" value="5000000"/>
+        <param name="warmupmaxbytes" value="2621440"/>
+        <param name="transfermaxtime" value="15000000"/>
+        <param name="transfermaxbytes" value="20971520" />
+        <param name="sendDataChunk" value="512"/>
+        <param name="postdatalength" value="10485760"/>
+        <param name="numberofthreads" value="3"/>
+      </params>
+    </test>
+    <test type="latency"  test-id="4" condition-group-id="1" displayName="Latency / Loss">
+      <params>
+        <param name="target" value="$closest"/>
+        <param name="port" value="6000"/>
+        <param name="interPacketTime" value="500000"/>
+        <param name="delayTimeout" value="2000000"/>
+        <param name="numberOfPackets" value="60"/>
+        <param name="percentile" value="100"/>
+        <param name="maxTime" value="30000000"/>
+      </params>
+    </test>
+  </tests>
+  <scheduled-tests>
+    <batch condition-group-id="1">
+      <executeAt>
+        <time random-interval="2h">07:00</time>
+        <time random-interval="8h">09:00</time>
+        <time random-interval="3h">17:00</time>
+      </executeAt>
+      <tests>
+        <test id="2"/>
+        <test id="3"/>
+        <test id="4"/>
+      </tests>
+    </batch>
+  </scheduled-tests>
+  <manual-tests>
+    <test id="2" />
+    <test id="3" />
+    <test id="4" />
+  </manual-tests>
+</config>
