@@ -109,14 +109,6 @@
 			android:configChanges="orientation|keyboardHidden|screenSize">
 		</activity>
 
-		<activity android:name="com.samknows.ska.activity.SKAActivationActivity"
-			android:configChanges="orientation|keyboardHidden|screenSize">
-		</activity>
-
-		<activity android:name="com.samknows.ska.activity.SKAMapActivityUnused"
-			android:configChanges="orientation|keyboardHidden|screenSize">
-		</activity>
-
 		<activity android:name="com.samknows.ska.activity.SKAPostToSocialMedia"
 			android:configChanges="orientation|keyboardHidden|screenSize">
 		</activity>
@@ -130,8 +122,6 @@
 		</activity>
 
 		<service android:name="com.samknows.measurement.MainService" />
-		<service android:name="com.samknows.measurement.NetUsageService" />
-		<service android:name="com.samknows.measurement.SamKnowsLoginService" />
 
 		<receiver android:name="com.samknows.measurement.StartupReceiver">
 			<intent-filter>
