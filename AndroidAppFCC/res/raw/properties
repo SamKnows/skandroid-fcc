@@ -7,5 +7,4 @@ protocol_scheme=http
 submit_path=mobile/submitjson
 download_config_path=mobile/getconfig
 data_cap_welcome=false
-anonymous=true
 collect_traffic_data=true
