@@ -101,7 +101,7 @@
 			android:configChanges="orientation|keyboardHidden|screenSize">
 		</activity>
 
-		<activity android:name="com.samknows.ska.activity.SKAAboutActivity"
+		<activity android:name="com.samknows.ui2.activity.SKAAboutActivity"
 			android:configChanges="orientation|keyboardHidden|screenSize">
 		</activity>
 		
