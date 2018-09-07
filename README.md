@@ -34,3 +34,10 @@ in Sep 2018
 
 ![Screengrab](docs/screengrabs/skandroid-fcc_twitter_works_2018-09-07.png)<br>
 `Figure 3: twitter` Once the twitter app is installed and logged in on device, tweeting works
+
+### Known issues following modernization
+
+#### Facebook integration broken
+It appears that posting to facebook no longer works (even with facebook app installed
+and logged in on device); this is not unexpected as the facebook SDK bundled with this
+app is several years old, and facebook regularly deprecates old SDKs.
