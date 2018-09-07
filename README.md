@@ -42,5 +42,8 @@ Here's what the rejuvenated app looks like running on a modern device
 ![Screengrab](docs/screengrabs/skandroid-fcc_metrics_running.png)<br>
 `Figure 2: running metrics` Metrics still work
 
+![Screengrab](docs/screengrabs/skandroid-fcc_export_json.png)<br>
+`Figure 3: export metrics json` Metrics export as json via emails still works
+
 ![Screengrab](docs/screengrabs/skandroid-fcc_twitter_works_2018-09-07.png)<br>
-`Figure 3: twitter` Once the twitter app is installed and logged in on device, tweeting works
+`Figure 4: twitter` Once the twitter app is installed and logged in on device, tweeting works
