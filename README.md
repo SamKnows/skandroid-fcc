@@ -7,7 +7,7 @@ all permissions are assumed granted a priori.  This will result in runtime crash
 that the "Run" button is pressed.  In order to fix this,
 it is *mandatory* that app permissions be manually granted via `Settings -> Apps` system facility
 
-![Screengrab](docs/skandroid-fcc_permissions_manually_granted_via_settings.png)
+![Screengrab](docs/screengrabs/skandroid-fcc_permissions_manually_granted_via_settings.png)<br>
 `Figure 1: permissions` *MUST* grant permissions via settings to prevent app from crashing!
 
 ##Introduction
@@ -27,8 +27,8 @@ You can find more infomation on SamKnows at www.samknows.com
 Project was modernized (i.e. converted to work w/recent Android Studio instead of Eclipse)
 in Sep 2018
 
-![Screengrab](docs/screengrabs/skandroid-fcc_metrics_running.png)
+![Screengrab](docs/screengrabs/skandroid-fcc_metrics_running.png)<br>
 `Figure 2: running metrics` Metrics still work
 
-![Screengrab](docs/screengrabs/skandroid-fcc_twitter_works_2018-09-07.png)
+![Screengrab](docs/screengrabs/skandroid-fcc_twitter_works_2018-09-07.png)<br>
 `Figure 3: twitter` Once the twitter app is installed and logged in on device, tweeting works
