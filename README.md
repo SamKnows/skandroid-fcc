@@ -2,10 +2,12 @@
 `modernize` branch
 
 ## NOTE
-Because this app was never configured to deal with android 'M' (Marshmallow) permissions model, and
-all permissions are assumed granted a priori.  This will result in runtime crash the moment
+Because this app was never configured to deal with android 'M' (Marshmallow) permissions model,
+all permissions are assumed granted a priori.  Obviously, this will not be the case on the
+majority of devices in 2018, so there will be a runtime crash the moment
 that the "Run" button is pressed.  In order to fix this,
-it is *mandatory* that app permissions be manually granted via `Settings -> Apps` system facility
+it is *mandatory* that app permissions be manually granted via `Settings -> Apps` 
+system facility as shown below:
 
 ![Screengrab](docs/screengrabs/skandroid-fcc_permissions_manually_granted_via_settings.png)<br>
 `Figure 1: permissions` *MUST* grant permissions via settings to prevent app from crashing!
