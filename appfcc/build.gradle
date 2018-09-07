@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+
+final String osName = System.getProperty("os.name").toLowerCase()
 
 android {
     compileSdkVersion 28
@@ -10,18 +10,46 @@ android {
         applicationId "com.samknows.fcc"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+
+        versionCode 224
+        versionName "1.${versionCode}"
 
         multiDexEnabled true
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        release {
+            if (osName.contains("windows")) {
+                storeFile file("keystore\\fcc.keystore")
+            } else {
+                storeFile file("keystore/fcc.keystore")
+            }
+            keyAlias "fcc"
+            storePassword ""
+            keyPassword ""
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'junit:junit:4.12'
     }
 }
 
