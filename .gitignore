@@ -2,3 +2,5 @@
 local.properties
 AndroidAppFCCTest/bin
 operators.json
+.gradle
+*.iml
