@@ -16,6 +16,8 @@ android {
 
         multiDexEnabled true
 
+        useLibrary 'org.apache.http.legacy'
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
