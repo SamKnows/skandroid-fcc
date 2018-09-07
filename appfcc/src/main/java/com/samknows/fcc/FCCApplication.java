@@ -31,12 +31,12 @@ public class FCCApplication extends SKApplication {
   }
                 
 
-  @Override
-  // Return null if not overridden.
-  public Typeface getDefaultTypeface() {
-    //return Typeface.DEFAULT;
-    return SKTypeface.sGetTypefaceWithPathInAssets("typewriter.ttf");
-  }
+//  @Override
+//  // Return null if not overridden.
+//  public Typeface getDefaultTypeface() {
+//    //return Typeface.DEFAULT;
+//    return SKTypeface.sGetTypefaceWithPathInAssets("typewriter.ttf");
+//  }
 
 
 	// Get the class of the main activity!

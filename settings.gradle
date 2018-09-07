@@ -1,1 +1,3 @@
+include ':skandroid-core:libcore'
+
 include ':appfcc'

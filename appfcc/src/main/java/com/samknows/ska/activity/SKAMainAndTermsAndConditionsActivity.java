@@ -135,7 +135,7 @@ public class SKAMainAndTermsAndConditionsActivity extends BaseLogoutActivity {
 		} else {
 			// The Activity starts invisible (see the AndroidManifest.xml) - we need
 			// to make the Activity visible at this point, so that we can show the T&C!
-			//this.setTheme(android.R.style.Theme_Holo_Light);¤
+			//this.setTheme(android.R.style.Theme_Holo_Light);
 			//this.setTheme(R.style.ApplicationStyle);
 
 			setContentView(R.layout.ska_main_and_terms_and_conditions_activity);
