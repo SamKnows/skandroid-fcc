@@ -1,5 +1,4 @@
 # skandroid-fcc
-`modernize` branch
 
 ## NOTE
 Because this app was created before the android 'M' (Marshmallow) permissions model,
