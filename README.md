@@ -2,15 +2,15 @@
 `modernize` branch
 
 ## NOTE
-Because this app was never configured to deal with android 'M' (Marshmallow) permissions model,
-all permissions are assumed granted a priori.  Obviously, this will not be the case on the
-majority of devices in 2018, so there will be a runtime crash the moment
-that the "Run" button is pressed.  In order to fix this,
-it is *mandatory* that app permissions be manually granted via `Settings -> Apps` 
+Because this app was created before the android 'M' (Marshmallow) permissions model,
+there are no in-app permission requests.   While the code has been updated to at least
+deal gracefully with denied permissions, the lack of location and storage permissions will
+mean that certain functionality is limited.  So in order to get as close as possible to full
+legacy behavior, it will be necessary to manually grant app permissions via `Settings -> Apps` 
 system facility as shown below:
 
 ![Screengrab](docs/screengrabs/skandroid-fcc_permissions_manually_granted_via_settings.png)<br>
-`Figure 1: permissions` *MUST* grant permissions via settings to prevent app from crashing!
+`Figure 1: permissions` *MUST* grant permissions via settings to enable all functionality
 
 ## Introduction
 This is the GitHub repository that contains the source-code for the SamKnows FCC Speed test app for Android. This repository contains the custom code used in the FCC's version of the app. This code mainly relates to FCC specific UI elements and custom app configuration.
